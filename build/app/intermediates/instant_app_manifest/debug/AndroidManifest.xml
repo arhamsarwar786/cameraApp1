@@ -100,6 +100,15 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/flutter_image_picker_file_paths" />
         </provider>
+        <provider
+            android:name="io.flutter.plugins.share.ShareFileProvider"
+            android:authorities="com.example.my_first_app.flutter.share_provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/flutter_share_file_paths" />
+        </provider>
 
         <activity
             android:name="com.karumi.dexter.DexterActivity"

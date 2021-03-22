@@ -50,10 +50,6 @@ flutter_plugin_android_lifecycle
 2.1
 file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/
 file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/lib/
-flutter_share
-2.0
-file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share-1.0.5/
-file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_share-1.0.5/lib/
 http
 2.4
 file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.12.2/
@@ -82,6 +78,10 @@ meta
 2.12
 file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.3.0/
 file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.3.0/lib/
+mime
+2.12
+file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/mime-1.0.0/
+file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/mime-1.0.0/lib/
 path
 2.12
 file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0/
@@ -122,6 +122,10 @@ process
 2.0
 file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/process-3.0.13/
 file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/process-3.0.13/lib/
+share
+2.12
+file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/share-2.0.1/
+file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/share-2.0.1/lib/
 source_span
 2.12
 file:///home/arham/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.8.0/

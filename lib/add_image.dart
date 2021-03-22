@@ -39,15 +39,15 @@ class _AddImageState extends State<AddImage> {
         context, MaterialPageRoute(builder: (context) => CameraEditor(path)));
   }
 
-  _save() async {
-    int result;
-    ImageModel image = ImageModel(image: path, name: DateTime.now().toString());
-    result = await helper.insertImage(image);
-    if (result != 0) {
-      // Success
-      Navigator.pop(context, true);
-    }
-  }
+  // _save() async {
+  //   int result;
+  //   ImageModel image = ImageModel(image: path, name: DateTime.now().toString());
+  //   result = await helper.insertImage(image);
+  //   if (result != 0) {
+  //     // Success
+  //     Navigator.pop(context, true);
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {

@@ -20119,5 +20119,6 @@ public final class R {
   }
   public static final class xml {
     public static final int flutter_image_picker_file_paths=0x7f100000;
+    public static final int flutter_share_file_paths=0x7f100001;
   }
 }

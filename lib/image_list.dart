@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'model.dart';
 import 'add_image.dart';
@@ -57,12 +56,18 @@ class _ImageListState extends State<ImageList> {
               crossAxisCount: 2, crossAxisSpacing: 7, mainAxisSpacing: 7),
           itemBuilder: (context, index) {
             return GestureDetector(
+              onLongPress: () {
+                setState(() {
+                  _delete(context, imageList[index]);
+                });
+              },
               onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => ImageDetail(
-                      image: imageList[index].image,
+                      imageGet: imageList[index].image,
                       name: imageList[index].name,
+                      index: index,
                     ),
                   )),
               child: Card(
@@ -70,8 +75,8 @@ class _ImageListState extends State<ImageList> {
                     borderRadius: BorderRadius.circular(15)),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(15),
-                  child: Image.file(
-                    File(imageList[index].image),
+                  child: Image.memory(
+                    imageList[index].image,
                     fit: BoxFit.cover,
                   ),
                 ),

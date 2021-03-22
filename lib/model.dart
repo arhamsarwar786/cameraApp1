@@ -1,5 +1,7 @@
+import 'dart:typed_data';
+
 class ImageModel {
-  String image;
+  Uint8List image;
   String name;
   int id;
 
@@ -10,11 +12,11 @@ class ImageModel {
 
   int get imageid => id;
 
-  String get images => image;
+  Uint8List get images => image;
 
   String get imageName => name;
 
-  set images(String newImage) {
+  set images(Uint8List newImage) {
     this.image = newImage;
   }
 
