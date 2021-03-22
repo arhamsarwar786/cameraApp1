@@ -57,20 +57,11 @@ class _ImageDetailState extends State<ImageDetail> {
   }
 
   shareImage() async {
-    // String myImage = utf8.decode(widget.imageGet);
-
-    // var my = Image.memory(widget.imageGet);
-    // my.
-    // var base64Image = base64Encode(widget.imageGet);
-    // var my = base64Decode(base64Image);
-    // print(my.toString());
     final tempDir = await getTemporaryDirectory();
     final file = await new File('${tempDir.path}/image1.jpg').create();
 
     file.writeAsBytesSync(widget.imageGet);
     print(file);
-    // final channel = const MethodChannel('channel:me.albie.share/share');
-    // channel.invokeMethod('shareFile', 'image.jpg');
 
     Share.shareFiles(['${tempDir.path}/image1.jpg']);
   }
@@ -91,12 +82,15 @@ class _ImageDetailState extends State<ImageDetail> {
       body: SafeArea(
         child: Stack(
           children: [
-            Container(
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height * 0.8,
-              child: Image.memory(
-                widget.imageGet,
-                fit: BoxFit.cover,
+            Align(
+              alignment: Alignment.center,
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height * 0.8,
+                child: Image.memory(
+                  widget.imageGet,
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
             Align(
@@ -119,15 +113,15 @@ class _ImageDetailState extends State<ImageDetail> {
                     icon: Icon(Icons.share),
                     onPressed: shareImage,
                   ),
-                  IconButton(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
-                    icon: Icon(Icons.delete),
-                    onPressed: () {
-                      setState(() {
-                        // _delete(context, imageList[widget.index].image);
-                      });
-                    },
-                  ),
+                  // IconButton(
+                  //   padding: EdgeInsets.symmetric(horizontal: 20),
+                  //   icon: Icon(Icons.delete),
+                  //   onPressed: () {
+                  //     setState(() {
+                  //       // _delete(context, imageList[widget.index].image);
+                  //     });
+                  //   },
+                  // ),
                 ],
               ),
             ),
